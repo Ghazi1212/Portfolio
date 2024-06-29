@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghazi Rahman's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div id="preloader"></div>
+    <header>
+        <div class="container">
+            <div class="profile-pic">
+                <img src="Screenshot 2024-06-29 at 5.58.02 AM.png" alt="Ghazi Rahman">
+            </div>
+            <h1 class="animate__animated">Ghazi Rahman</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="dark-mode-toggle">Dark Mode</button>
+        </div>
+    </header>
+
+    <section id="hero" class="parallax">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Discover my work and skills</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Data-driven Backend Software Developer with expertise in ETL processes, database optimization, and data warehousing using Informatica PowerCenter, Java, Python, and SQL. Skilled in developing and maintaining high-quality, efficient data solutions.</p>
+            <p><a href="Ghazi_Rahman_Resume.pdf" target="_blank">View My Resume</a></p>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Programmer Analyst</h3>
+                <p><strong>Company:</strong> Cognizant Technology Solutions</p>
+                <p><strong>Duration:</strong> January 2021 – August 2022</p>
+                <ul>
+                    <li>Developed ETL processes using Informatica PowerCenter, increasing data accuracy by 15%.</li>
+                    <li>Modeled data warehouse schemas, collaborating with business analysts to meet BI and reporting requirements.</li>
+                    <li>Implemented Informatica MDM solutions, enhancing data consistency and reliability by 25%.</li>
+                    <li>Developed complex SQL queries and managed database performance.</li>
+                    <li>Monitored server operations, ensuring 100% server uptime.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Student Intern</h3>
+                <p><strong>Company:</strong> Airports Authority of India</p>
+                <p><strong>Duration:</strong> March 2019 – May 2019</p>
+                <ul>
+                    <li>Collaborated with Air Traffic Control to improve communication and safety.</li>
+                    <li>Trained on advanced navigational equipment, including ILS and DVOR.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="carousel">
+                <div class="project">
+                    <h3>Integrated Data Warehouse for Hospital Management Systems</h3>
+                    <p>Developed an integrated data warehouse model to streamline patient data management and improve reporting and decision-making across various hospital departments.</p>
+                    <p><strong>Tools/Technologies:</strong> Informatica PowerCenter, SQL, PySpark, Python.</p>
+                    <button class="modal-btn" data-modal="modal1">Read More</button>
+                </div>
+                <div class="project">
+                    <h3>Speech Detection Using Smartphone Gyroscope</h3>
+                    <p>Conducted research on using smartphone gyroscope sensors to detect speech via jaw and lip movements by analyzing and visualizing data to identify speech patterns using Machine Learning (DTW).</p>
+                    <p><strong>Tools/Technologies:</strong> Java (Android Studio), Python (Jupyter Notebook).</p>
+                    <button class="modal-btn" data-modal="modal2">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="carousel">
+                <div class="testimonial">
+                    <p>"Ghazi is a highly skilled and dedicated developer. His work on our data warehouse project was exceptional." - Client A</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Ghazi's expertise in ETL processes and database optimization significantly improved our data accuracy and performance." - Client B</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Working with Ghazi was a pleasure. His attention to detail and problem-solving skills are outstanding." - Client C</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section parallax">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via email or connect with me on LinkedIn.</p>
+            <p><a href="mailto:ghazishaik5@gmail.com"><i class="fas fa-envelope"></i> ghazishaik5@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/ghazi-rahman-shaik-8983731b0/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Ghazi Rahman</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" data-modal="modal1">&times;</span>
+            <h2>Integrated Data Warehouse for Hospital Management Systems</h2>
+            <p>Details about the project...</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" data-modal="modal2">&times;</span>
+            <h2>Speech Detection Using Smartphone Gyroscope</h2>
+            <p>Details about the project...</p>
+            <div class="image-grid">
+                <img src="Screenshot 2024-02-19 at 8.22.30 PM.png" alt="Screenshot of the Android application">
+                <img src="Screenshot 2024-04-16 at 9.54.07 AM.png" alt="Graph showing gyroscopic data">
+                <img src="Screenshot 2024-05-22 at 9.52.41 AM.png" alt="Logcat showing gyroscopic data">
+                <img src="Screenshot 2024-06-29 at 6.48.17 AM.png" alt="Confusion matrix">
+                <img src="Screenshot 2024-06-29 at 6.52.04 AM.png" alt="Time series plot with highlighted areas">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
