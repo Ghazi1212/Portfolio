@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         sectionsSpy.forEach(section => {
             const sectionTop = section.offsetTop;
-            if (pageYOffset >= sectionTop - 60) {
+            if (pageYOffset >= sectionTop - 60) { // Adjust this value to match your header height
                 current = section.getAttribute('id');
             }
         });
@@ -101,8 +101,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (this.hash !== "") {
             event.preventDefault();
             const hash = this.hash;
+            const headerHeight = document.querySelector('header').offsetHeight;
+            const targetOffset = $(hash).offset().top - headerHeight;
+
             $('html, body').animate({
-                scrollTop: $(hash).offset().top
+                scrollTop: targetOffset
             }, 800, function() {
                 window.location.hash = hash;
             });
