@@ -113,4 +113,13 @@ document.addEventListener('DOMContentLoaded', function () {
     particlesJS.load('hero', 'particles.json', function() {
         console.log('callback - particles.js config loaded');
     });
+
+    // Responsive navigation
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        navToggle.classList.toggle('active');
+    });
 });
